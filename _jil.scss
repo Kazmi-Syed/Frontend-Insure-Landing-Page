@@ -1,0 +1,208 @@
+@import "var";
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    transition: 235ms;
+}
+a{
+    font-family: Karla;
+    text-decoration: none;
+    font-weight: 700;
+}
+p{
+    font-family: $sec;
+}
+path:hover{
+    fill: black;
+    cursor: pointer;
+}
+
+svg{
+    margin-left: 15px ;
+}
+button{
+    border: 2px solid $VeryLightGray;
+    padding: 10px 37px;
+    outline: none;
+    background: transparent;
+    color: $VeryLightGray;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+button:hover , button:active{
+    cursor: pointer;
+    color: $VeryDarkViolet;
+    background: $VeryLightGray;
+}
+h1{
+    max-width: 450px;
+    font-family: $dm;
+    color: $VeryLightGray;   
+}
+
+@font-face {
+    font-family: Karla;
+    src: url("./fonts/Karla/Karla-VariableFont_wght.ttf");
+}
+
+@font-face {
+    font-family: DM;
+    src: url("./fonts/DM_Serif_Display/DMSerifDisplay-Regular.ttf");
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 100px;
+
+    svg{
+        display: none;
+    }
+    ul{
+        li{
+            display: inline-block;
+            margin-left: 40px;
+            a{
+                color: $DarkGrayishViolet;
+            }
+            a:hover , a:active{
+                color: $VeryDarkViolet;
+            }
+                #butt{
+                    border: 2px solid $VeryDarkViolet;
+                    padding: 10px 37px;
+                    color: $VeryDarkViolet;
+                }
+                #butt:hover{
+                    background: $VeryDarkViolet;
+                    color: $VeryLightGray;
+                }
+            
+        }
+    }
+}
+
+.aftnav{
+    background: $DarkViolet;
+    padding: 200px 100px;
+    height: 690px;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: space-between;
+    position: relative;
+    .flex1{
+        h1{
+            font-family: DM;
+            font-size: 69px;
+            font-weight: 700;
+            max-width: 510px;
+        }
+
+        p{
+            font-family: Karla;
+            font-size: 16px;
+            max-width: 550px;
+            color: $VeryLightGray; 
+            line-height: 25px; 
+            margin:22px 0px ;
+            
+        }
+    }
+    .flex2{
+    img{
+        position: absolute;
+        bottom: -170px;
+        right: 100px;
+        width: 580px;
+        object-fit: contain;
+    }}
+}
+main{
+    margin-top: 200px;
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    h1{
+        color: $DarkViolet;
+        font-weight: 700;
+        font-size: 60px;
+        margin: 50px 0px;
+    }
+    .flexydown{
+        display: flex;
+        justify-content: space-between;
+        .flexybox{
+            max-width: 311px;
+            line-height: 25px;
+            img{
+                border-radius: 50%;
+            }
+
+            h2{
+                color: $DarkViolet;
+                display: block;
+                margin: 20px 0px;
+            }
+            p{
+                margin-top: 10px;
+                color: $DarkGrayishViolet;
+            }
+        }
+    }
+}
+
+.beforefooter{
+    background: $DarkViolet;
+    margin: 100px;
+    padding: 78px;
+    display: flex;
+    justify-content: space-between;
+    h1{
+        max-width: 290px;
+    }
+    button{
+        margin-top: 20px;
+        max-width: 200px;
+        max-height: 50px;
+    }
+}
+
+footer{
+    user-select: none;
+    padding: 20px 100px;
+    display: flex;
+    flex-direction: column;
+    .footerup{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 30px;
+    }
+    .footerdown{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        ul{  
+            list-style-type: none;
+            font-family: Karla;
+            font-weight: 700;
+            li{
+                color: $DarkGrayishViolet;
+                margin: 10px 0px;
+                a{
+                    color: $DarkViolet;
+                    margin: 30px 0px;
+                 }
+                a:hover , a:active{
+                    
+                    text-decoration: underline;
+                }
+            }
+            li:first-of-type{
+                margin: 30px 0px;
+            }
+        }
+        
+    }
+}

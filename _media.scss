@@ -1,0 +1,35 @@
+@media screen and(max-width:375px){
+    *{
+        margin: 0px;
+    }
+    nav{
+        padding: 20px 20px;
+        ul{
+            display: none;
+        }
+        svg{
+            display: initial;
+        }
+    }
+
+    .afternav{
+        width: 100vw;
+        padding: 0px;
+        h1{
+            font-size: 40px;
+        }
+        img{
+            position: initial;
+        }
+    }
+
+
+    footer{
+        .footerdown{
+            text-align: center;
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
+}
+
